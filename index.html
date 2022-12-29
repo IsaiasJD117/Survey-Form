@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id ="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this quick survey</p>
+    <form id ="survey-form">
+      <div>
+        <label id="name-label">Name:</label>
+        <input id="name" type="text" placeholder="Your Name" required></input>
+      </div>
+      <div>
+        <label id="email-label">Email:</label>
+        <input id="email" type="email" placeholder="Your Email" required></input>
+      </div>
+      <div>
+        <label id="number-label">Age:</label>
+        <input id="number" type="number" min="8" max="99" placeholder="Your Age"></input>
+      </div>
+      <div>
+        <label id="dropdown-label">
+          What type of car do you drive?
+        </label>
+        <select id="dropdown" name="cars">
+          <option value="SUV">SUV</option>
+          <option value="Sedan">Sedan</option>
+          <option value="Coupe">Coupe</option>
+          <option value="Truck">Truck</option>
+          <option value="Muscle">Muscle</option>
+        </select>
+      </div>
+      <div>
+        <p>How many years of driving experience do you have?</p>
+        <input type="radio" id="1" name="driving-xp" value="1">
+        <label for="1">1</label><br>
+        <input type="radio" id="2" name="driving-xp" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" id="3+" name="driving-xp" value="3+">
+        <label for="3+">3+</label> 
+      </div>
+      <div>
+        <p>Do you own any of the following vehicles?</p>
+         <input type="checkbox" id="vehicle1" name="vehicle1" value="Motorcycle">
+         <label for="vehicle1"> I have a motorcycle</label><br>
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+         <label for="vehicle2"> I have a car</label><br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+         <label for="vehicle3"> I have a boat</label><br> 
+      </div>
+      <div>
+        <p>Additional comments...</p>
+        <textarea type="input"></textarea>
+      </div>
+      <div>
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

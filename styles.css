@@ -1,0 +1,15 @@
+body{
+    background-color: grey;
+    font-family: Helvetica;
+}
+#title, #description{
+    text-align: center
+}
+form{
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
